@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="IE=edge">
+    <title>U.S. Commercial Airlines Analysis</title>  
+
+
+    <link rel="stylesheet" href="C-bootstrap.min.css">
+    <link rel="stylesheet" href="C-d3-tip.css">
+    <link rel="stylesheet" href="C-style.css">    
+    <link rel="stylesheet" href="C-style_airline.css"> 
+</head>
+
+<body>
+
+   <div id="main">
+      <div id="header">
+         <div id="logo">
+            <div id="logo_text">  
+               <h1><br>U.S. Commercial Airlines Development Analysis </br> (1995 - 2020)</h1>
+            </div> 
+         </div>
+
+      
+         <div id="menubar1">
+            <ul id="menu1">  
+               <li><a href="index.html">Home</a></li>
+               <li class="selected"><a href="Revenue.html">Revenue</a></li>              
+               <li><a href="Operation.html">Operation</a></li>
+               <li><a href="Employment.html">Employment</a></li>
+               <li><a href="Covid Related.html">Covid Related</a></li>
+            </ul>
+         </div>
+      </div>   
+
+      <div id="site_content">
+         <div class="sidebar">
+               <ul class="local"> 
+                  <br>
+                  <li><a href="#rev">Revenue </a></li>
+                  <li><a href="#revregion">Revenue by Region</a></li> 
+                  <li><a href="#revsource">Revenue by Source</a></li> 
+                  <li><a href="#revexpense">Revenue VS. Operating Costs</a></li>                        
+                  <li><a href="#rasmcasm">RASM VS. CASM</a></li>
+                  <li><a href="#yield">Yield</a></li>
+                  <br>             
+               </ul>
+         </div>  
+
+
+         <div id="content">
+            <div class="container">
+               
+               <!-- 1. Revenue -->
+               <div class="row">
+                  <div id="rev">
+                     <h3>Revenue </h3>
+                     <p><b>Operating Revenue </b>: Revenues received from total airline operations including scheduled and non-scheduled service. Sources of revenue include passenger, cargo, excess baggage and certain other transport-related revenue.</p>                   
+                     <p>
+                        The following dashboard shows ten US commercial airlines' total revenue and passenger revenue over the past 26 years grouped by carrier type or airline. Network carriers revenue grew up significantly from 2011 to 2019, then declined sharply the following year in 2020. Over the 25-year period from 1995 to 2019, value carriers and ultra-low-cost carriers (ULCCs) had been growing steadily with a slight disruption after 2008 financial crisis. Even though the total revenue of all value carriers and ultra-low-cost carriers (ULCCs) combined still couldn't compared to network carriers, the market share changed since the efficient travels became more and more popular. In 2020, the totoal revenue jumped off the cliff for both.
+                     </p> 
+                     <p>
+                        As expected, total revenue declined in 2009 due to financial crisis and recovered quickly afterward for all three groups. Over the past ten years, total revenue had been growing steadily at a rapid rate, especially for ultra-low-cost carriers (ULCCs) whose growth percentages were 2-digits three years in a row. In 2020, all three groups hit the bottom.
+                     </p>                
+                  </div>  
+                  
+                  <div class="row">
+                     <div class="col-sm-12 ">
+                         <div class="card shadow mb-1 ">
+                            <div class="card-body text-center">
+    
+                              <div class='tableauPlaceholder' id='viz1648777223501' style='position: relative'><noscript><a href='#'><img alt='Rev ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByRegion&#47;Rev&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TrafficCapacity--ByRegion&#47;Rev' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByRegion&#47;Rev&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1648777223501');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='1627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='1627px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                            </div>				
+                         </div>
+                      </div>
+                   </div>   
+
+               </div>
+
+
+            </p>&nbsp;</p>
+            <!-- 2. Revenue breakdown by Region  -->
+            <div class="row">
+               <div id="revregion">
+                  <h3>Revenue Breakdown by Region</h3>
+                  <p> <b>International Operation = Atlantic Operation + Latin America Operation + Pacific Operation</b> </p>
+                  <p>
+                     The total revenue reached to the highest in 2019 in both domestic and international regions for most U.S. commercial airlines. For example, the total revenue of United Airline in 2019 reached up to 43.26 billion with an YOY growth of 4.7%. The percentage of total revenue for different operating regions vary significantly between airlines. Take the revenue made from international travels as an example,  it took 37.68% of the total revenue for United Airline, but 30.69% only for American Airlines. It has everything to do with company development strategies. Take a closer look at the percentages, 62.86% of the total revenue made from international market was from Pacific operations region at United Airlines, 6.45% only at American Airlines. When reviewing the percentage of revenue distribution over years for all airlines, there is clear evidence of business approaches shift regarding to company development and strategy changes.
+                  </p>
+                  <p>
+                     Network carriers have been dominating in International regions. Value carriers and ultra-low-cost carriers (ULCCs) took a small percerage in Atlantic, Latin and Pacific regions.
+                  </p>
+               </div>        
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 ">
+                  <div class="card shadow mb-1 ">
+                     <div class="card-body text-center">
+
+                        <div class='tableauPlaceholder' id='viz1648778687394' style='position: relative'><noscript><a href='#'><img alt='RevRegion ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByRegion&#47;RevRegion&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TrafficCapacity--ByRegion&#47;RevRegion' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByRegion&#47;RevRegion&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1648778687394');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='1427px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='1427px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                     </div>				
+                  </div>
+               </div>
+            </div>
+
+
+
+         </p>&nbsp;</p>
+         <!-- 3 Revenue breakdown by Source -->
+         <div class="row">
+            <div id="revsource">
+               <h3>Revenue Breakdown by Source</h3>
+               <p><b>Passenger Revenue </b>: Revenue received by the airline from the carriage of passengers in scheduled operations</p>
+               <p><b>Operating Revenue </b>= <b>Passenger Revenue</b> + <b>Baggage Fee, Cancellation Fee, and Miscellaneous Operating Revenues</b> + <b>Other Transport Related Revenue</b>	</p>
+               <p>
+                  It is interesting to notice that the gap between passenger revenue and total revenue became bigger and bigger after 2012 for almost all airlines despite carrier type. Commercial airlines had captured increasing amounts of ancillary revenue from three major categories of charges, baggage fee, reservation change fee(cancellation), and miscellaneous operations revenue which included non-ticket charges such as  food and beverages, entertainment equipment, Wi-Fi service and so on. Ancillary revenue exploded from nearly $40 billion in 2010 to over $109 billion in 2019, increased from 4.8% to 12.2% of total revenue. Even those fees continued to grow modestly and contributed much revenue to all carriers, the biggest portion of total revenue was still generated from tickets.
+               </p>
+               <p>
+                  Ancillary revenues differ greatly among three groups. The percentage of total revenue generated from non-ticket fees were significantly high for network carriers like Delta and United Airline, but substantially less for value carriers like Hawaiian Airline and JetBlue Airways. In 2019, the average ancillary revenue of network carriers was $4.06 billion, value carriers and ultra-low-cost carriers (ULCCs)  were $0.88 and $0.84 billion respectively.  This important distinction between different airlines was that the carriers had different market strategies and targeted markets as well as passenger groups. 
+               </p>
+               <p>
+                  It was pointed out that ultra-low-cost carriers (ULCCs) has been chasing ancillary revenue closely and closely over the past ten years by adding various type of unbundled miscellaneous charges like paper boarding pass printing fee, credit card payment fee, phone booking hefty fee, seating flexibility fee and so on.
+               </p>
+               <p>
+                  In 2020, Ancillary revenue dropped just like every other revenue sources.
+               </p>
+             </div>        
+         </div>
+
+         <div class="row">
+           <div class="col-sm-12 ">
+               <div class="card shadow mb-1 ">
+                  <div class="card-body text-center">
+
+                     <div class='tableauPlaceholder' id='viz1649543439490' style='position: relative'><noscript><a href='#'><img alt='Operating Revenue Breakdown by Airline Type and Airline ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RevenueEmployment&#47;Rev&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RevenueEmployment&#47;Rev' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RevenueEmployment&#47;Rev&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1649543439490');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1200px';vizElement.style.height='1227px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                  </div>				
+               </div>
+            </div>
+         </div>
+
+
+               </p>&nbsp;</p>
+               <!-- 4. Airline Revenue VS. Operating Costs   -->
+               <div class="row">
+                  <div id="revexpense">
+                     <h3>Revenue VS. Operating Costs</h3>
+                     <p> <b>Airline Operating Costs </b>are the expenses which are related to the operation of a airline departure and relavant services. </p>
+                     <p>
+                        The gap between total revenue and opearting cost represents the net profits made by each airline. For cost, average US commercial airline unite cost had been rising consistently in the past two decades. So did Labor, fuel, maintenance, advertising, landing fee, insurance and so on all major expenditure of operating cost.
+                     </p>
+                     <p>
+                        The data also reveals that there are clear correlations between revenue and cost, regardless of the carrier groups or operation regions. Calculated growth rates of revenue and cost indicates that commercial airline industry is extremely capital and labor intensive with high susceptibility and had been growing rapidly over past two decades before pandemic year.
+                     </p>
+                  </div>        
+               </div>
+
+               <div class="row">
+                 <div class="col-sm-12 ">
+                     <div class="card shadow mb-1 ">
+                        <div class="card-body text-center">
+
+                           <div class='tableauPlaceholder' id='viz1648777852276' style='position: relative'><noscript><a href='#'><img alt='RevExp ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByRegion&#47;RevExp&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TrafficCapacity--ByRegion&#47;RevExp' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByRegion&#47;RevExp&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1648777852276');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='1227px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='1227px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                           
+                        </div>				
+                     </div>
+                  </div>
+               </div>
+
+
+
+            </p>&nbsp;</p>
+            <!-- 5. RASM VS. CASM-->
+            <div class="row">
+               <div id="rasmcasm">
+                  <h3>RASM <a href="https://en.wikipedia.org/wiki/Available_seat_miles" target="blank">[wiki]</a>  & CASM  <a href="https://en.wikipedia.org/wiki/Available_seat_miles#Ex-fuel_CASM_or_CASM_ex-fuel" target="blank">[wiki]</a></h3>
+                  <p><b>Revenue per Available Seat Mile (RASM)</b> : a measure of passenger “unit revenue.” It is calculated by dividing passenger revenue by available seat miles. Typically the measure is presented in terms of cents per mile. This measure is equivalent to the product of load factor and passenger yield.</p>
+                  <p><b>Cost per Available Seat Mile (CASM)</b> : a measure of unit cost in the airline industry. CASM is calculated by taking all of an airline’s operating expenses and dividing it by the total number of available seat miles produced. Sometimes, fuel or transport-related expenses are withheld from CASM calculations to better isolate and directly compare operating expenses.</p>
+                  <p>
+                     Network carriers experienced a continuous but slow RASM increasing from 2010 to 2014, then followed by a slight disruption afterward. Still, a significant revenue premium generated by high RASM from industry-leader network carriers was over any other US carrier groups. In 2020, RASM hit the lowest point for the past 10 years.
+                  </p>
+                  <p>
+                     RASM had been trending downwards for ultra-low-cost carriers (ULCCs) after it reached to the peak as $8.7 cents in 2011.  As predicted, the ultra-low-cost carriers (ULCCs) had the lowest RASMs compared to other competitors. The RASM gap between ultra low cost and value carriers became bigger and bigger almost every year since 2012. Over the past ten years, value carriers RASM premium was as high as $5.5 cent and as low as $2.8 cent compared with ultra-low-cost carriers (ULCCs).
+                  </p>
+                  <p>
+                     Value carriers kept the same level of RASM around $11 cents since 2012. Unlike other carriers, they did not experience any particular up and down. The overall RASM gap between network and value carriers narrowed over the ten years since value carriers kept expanding their market share by improving frequency and services in domestic region and growing international operations.
+                  </p>
+                  <p>
+                     Value carriers reduced CASM from $7.2 cents in 2011 to less than $4.6 cents in 2016. Network carriers experienced a continuous but slight CASM increasing from 2010 to 2014, then followed by a big disruption at a rapid rate. Meanwhile, average CASM had been trending downwards consistently for ultra-low-cost carriers (ULCCs) after it reached to the peak as $7.0 cents in 2013.  As expected, the ultra-low-cost carriers (ULCCs) have the lowest CASMs. The CASM gap between ultra low cost (ULCCs) and value carriers became bigger and bigger almost every year since 2015. All three groups benefited from the CASM decline causing by fuel price dropping from 2015 to 2019. </p> 
+                  <p>In 2020, all three groups suffered from CASM increasing due to the limited resource and low demand.</p>
+               </div>        
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 ">
+                  <div class="card shadow mb-1 ">
+                     <div class="card-body text-center">
+
+                        <div class='tableauPlaceholder' id='viz1648862761336' style='position: relative'><noscript><a href='#'><img alt='CASMRASM ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByMetric&#47;CASMRASM&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TrafficCapacity--ByMetric&#47;CASMRASM' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByMetric&#47;CASMRASM&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1648862761336');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='1227px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='1227px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                     </div>	
+
+                     </p>&nbsp;</p>
+                     <p>
+                        Network carriers had been holding the RASM advantage in domestic region for the ten-year period from 2010 to 2019 by keeping it between $11 cents and $13 cents. In 2014, they experienced a series of substantial increase in domestic region and reached to the first peak. Meanwhile, ultra-low-cost carriers (ULCCs) reached to the domestic RASM peak as $9.7 cents in 2011, then followed by continues declining and fell below $6 cents soon. Since 2017, domestic RASM had been under $6 cents with no sign of bouncing back for ultra-low-cost carriers (ULCCs).
+                     </p>
+                     <p>
+                        For the domestic region in 2019, two value carriers Southwest and Hawaiian outrun network carrier United on RASM performance. Frontier and Spirit using ultra low fare quote strategy resulted in having the lowest RASM in both domestic and international regions. Allegiant had the highest domestic RASM as an ultra-low-cost carries. On the contrary, Commercial airline industry leaders Delta and American have the highest domestic and international RASM from their outstanding abilities to operate flights and generate big profit by good services. Value carries Alaska and Hawaiian is famous for providing intra-island service with long hauls to the United States mainland, which makes them special and keep the advantage on RASM performance. From the international RASM ranking in right side, it was clear that network carriers dominated in the airline industry with no doubt and ultra-low-cost carriers shared lowest revenue.
+                     </p>
+                     <p>
+                        Ultra-low-cost carriers (ULCCs) had been holding the CASM advantage in domestic region for the ten-year period from 2010 to 2019 by keeping it between $5 to $8 cents. In 2016, they experienced a series of substantial decrease in domestic region and reached to the lowest point below $5 cents. Meanwhile, network carriers reached to the domestic CASM peak of $8.5 cents in 2014, then followed by continues declining and fell to $6.1 cents in 2016. The rapid CASM decline in 2016 was caused by falling fuel price which contributes a big portion of total cost. 
+                     </p>
+                     <p>
+                        In 2020, CASM outpaced RASM for all three ariline types in both Domestic and International regions.
+                     </p>
+                     </p>&nbsp;</p>
+               
+                     <div class="card-body text-center">
+
+                        <div class='tableauPlaceholder' id='viz1648862944944' style='position: relative'><noscript><a href='#'><img alt='CASMRASM1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByMetric&#47;CASMRASM1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TrafficCapacity--ByMetric&#47;CASMRASM1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByMetric&#47;CASMRASM1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1648862944944');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='1027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='1027px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+
+               </p>&nbsp;</p>
+               <!-- 6. Yield -->
+               <div class="row">
+                  <div id="yield">
+                     <h3>Yield   <a href="https://marketrealist.com/2014/09/must-know-yield-another-key-driver-airline-revenue/" target="blank">[wiki]</a> </h3>
+                     <p><b>Yield</b> is a measure in cent calculated by dividing revenue by RPM. It represents the returen per passenger mile.</p>
+                     <p><b>Yield</b> is the average fare per passenger per mile. Passenger revenue is calculated by multiplying RPM (or revenue passenger miles) with yield. Yield varies based on demand and supply factors. Since demand for air travel is seasonal, yield is higher during peak seasons.</p>
+                      <p>
+                        Network carriers produced a domestic passenger yield of $15.3 cents in 2019, increasing 35% than 2005. International passenger yield increased to $13.7 cents by 22% above 2005 level. In contrast, ultra-low-cost carriers (ULCCs) experienced yield decline in both domestic and international operations. In 2019, domestic yield dropped to $6.9 cents, 29% below 2005 level. International yield of ultra-low-cost carriers (ULCCs) jumped to the bottom as $4.3 cents in 2016, 32.8% lower than 2005. Due to the worldwide economic crisis in 2008, all three airline groups experienced falling passenger yield first and then slow recovery later. Fuel prices fall rapidly since 2016 and helped lowering airline industry cost, which was one of the main reasons that commercial airlines were able to expand market share by capturing low fares, especially for leisure travelers. 
+                      </p>
+                      <p>
+                        Yield did not change significantly in 2020 due to the well-management and resheduling.
+                      </p>
+                  </div>        
+               </div>
+
+               <div class="row">
+                 <div class="col-sm-12 ">
+                     <div class="card shadow mb-1 ">
+                        <div class="card-body text-center">
+
+                           <div class='tableauPlaceholder' id='viz1649219064341' style='position: relative'><noscript><a href='#'><img alt='yield1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByMetric&#47;yield1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TrafficCapacity--ByMetric&#47;yield1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByMetric&#47;yield1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1649219064341');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                           
+                        </div>	
+                        
+                     </p>&nbsp;</p>
+                     <p>US airline revenue is driven largely by yield. The gaps among various yields between traditional network carriers and ultra low-cost carriers (ULCCs) are caused by different strategies and targeted markets. </p>
+               
+                     <div class="card-body text-center">
+
+                        <div class='tableauPlaceholder' id='viz1649034428840' style='position: relative'><noscript><a href='#'><img alt='yield2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByMetric&#47;yield2_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TrafficCapacity--ByMetric&#47;yield2_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TrafficCapacity--ByMetric&#47;yield2_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1649034428840');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='1027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='1027px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                        
+                     </div>
+
+                     </div>
+                  </div>
+               </div>
+
+
+
+               </p>&nbsp;</p>
+        
+
+            </div>
+         </div>
+      </div> <!-- site content end -->
+
+
+      <div id="content_footer">  <!-- set up footer -->
+         <div id="footer">
+          &copy; <script>var d = new Date(); document.write(d.getFullYear());</script> Spring
+          | <a href="http://bulletin.gwu.edu/search/?scontext=all&search=dats+6501">DS6501 Capstone</a>
+          | Group 2: Jing Li
+         </div>
+      </div>   <!-- footer end -->
+
+
+   </div>   <!-- main end -->
+
+
+</body>
+</html>
